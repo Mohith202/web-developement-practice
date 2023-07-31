@@ -3,7 +3,11 @@
     padding: 0;
   
 }
-
+body{
+    display: flex;
+    justify-content:flex-start;
+    background-color: #000000;
+}
 .container-left{
     width: 25%;
     height:97.8vh;
@@ -104,4 +108,21 @@
     color:#b3b3b3;
     font-size: 100%  !important;
    
+}
+.container-right{
+    flex-basis: 79%;
+	flex-grow: 0;
+    background-color: #000000;
+	flex-shrink: 0;
+}
+.right-container-header{
+    display: flex;
+    color:white;
+    background-color: #1f1f1f;
+    border: 2px solid black;
+    justify-content: space-between;
+}
+.container-header-left{
+    font-size: larger;
+    padding: 20px 25px;
 }
