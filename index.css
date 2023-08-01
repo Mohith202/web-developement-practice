@@ -4,18 +4,21 @@
   
 }
 body{
-    display: flex;
-    justify-content:flex-start;
+   display: flex;
     background-color: #000000;
 }
 .container-left{
-    width: 25%;
-    height:97.8vh;
+    width: 377px;
+    display: block;
+    height:max-content;
     padding: 10px 10px 5px 5px;
-    position:relative;
     font-size: 120%;
     border-top-right-radius: 2%;
     background-color: #000000;
+}
+.container-left1{
+    position: fixed;
+    width:inherit;
 }
 .container-left-header{
     font-weight: 200;
@@ -24,7 +27,6 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    /* border:2px solid white; */
     height:15vh;
     padding:0px 20px 20px ;
     border-radius: 20px;
@@ -40,8 +42,11 @@ body{
 .container-left-playlists{
     background-color:#121212;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
     color: white;
-    margin:2px;
+    /* margin:2px; */
     height:79vh;
     padding-left:15px;
     margin-top: 9px;
@@ -77,13 +82,15 @@ body{
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    margin-top: 30px;
-    margin-bottom: 20px;
+   margin:12px;
+   margin-left:0px  !important;
+   align-items: center;
     color: #b7b7b7;
 }
 .left-search1 input{
     background-color: #2a2a2a;
     border: none;
+    margin:10px 3px;
     padding: 1.5%;
     border-radius: 8px;
     color:white;
@@ -109,20 +116,88 @@ body{
     font-size: 100%  !important;
    
 }
+
+/* ********right side****************** */
+
 .container-right{
-    flex-basis: 79%;
-	flex-grow: 0;
-    background-color: #000000;
-	flex-shrink: 0;
+    background: #411705;
+    background: linear-gradient(to bottom, #411705 17%, #000000 100%);
+    border-top-right-radius: 2%;
+    border-radius: 2%;
 }
+
 .right-container-header{
     display: flex;
-    color:white;
-    background-color: #1f1f1f;
-    border: 2px solid black;
+    flex-direction: row;
     justify-content: space-between;
+    color:white;
 }
 .container-header-left{
+    display:flex;
+    align-items: center;
+    justify-content: center;
     font-size: larger;
     padding: 20px 25px;
+}
+.container-header-left1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    padding: 20px 25px;
+}
+.container-header-left1 i{
+    background-color: #171717;
+    padding: 12px;
+    margin:5px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.container-header-left i:nth-child(3){
+    margin:0px 10px;
+    background-color: #000000;
+    padding:10px;
+    border-radius: 50%;
+}
+.container-header-left span{
+    background-color: #000000;
+    font-weight:500;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.container-header-left span:hover , i:hover{
+    size: 1.5;
+    color:black;
+    background-color:white;
+    cursor: pointer;
+}
+.container-recently-played p{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container-recently-played p{
+    color: white;
+    font-size: 150%;
+    padding:20px;
+}
+.right-down-list{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-list-pic1{
+    display: flex;
+    margin:10px;
+    padding: 10px;
+   
+    border-radius: 15px;
+    flex-direction: column;
+
+}
+.right-list-pic1  img{
+    border-radius: 15px;
+    padding-bottom: 5px;
 }
